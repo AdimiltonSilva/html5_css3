@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/curso_em_video.ico" type="image/x-icon">
+    <title>Curso em vídeo - HTML5 e CSS3 - Módulo 1</title>
+    </style>
+</head>
+<body>
+    <h1>Inserirndo vídeos hospedado localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <p>Exbindo com a tag &lt;video src=""&gt;</p>
+    <video src="../midia/trilha2.mp4" width="560" controls></video>
+    <video src="../midia/Trilha2.webm" width="560" controls></video>
+    <video src="../midia/Trilha2.ogv" width="560" controls></video>
+    
+    <p>Exbindo com a tag &lt;video source=""&gt;</p>
+    <video width="560" poster="../img/4-1.webp" controls>
+        <source src="../midia/Trilha2.mp4" type="video/mp4">
+        <source src="../midia/Trilha2.webm" type="video/mp4">
+        <source src="../midia/Trilha.ogv" type="video/mp4">
+        <source src="../midia/trilha_001.ogv" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserir vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=CqUYPwxo1KFn9zQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserir vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/180028670?h=c90c02fb7c&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

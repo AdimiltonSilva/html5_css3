@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+header > h1 {
+    border: 12px solid transparent;
+    padding: 10px;
+    border-image: url('../img/borda.png') 27 repeat;
+/* 
+    border-image-source: url('./img/borda.png');
+    border-image-slice: 27;
+    border-image-repeat: repeat;
+ */
+}
+
+nav {
+    background-color: rgb(102, 102, 102);
+    padding: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+article {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+article > aside {
+    background-color: rgb(83, 82, 82);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+.bola {
+    background-color: black;
+    display: inline-flex;
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    border-radius: 50%;
+}
