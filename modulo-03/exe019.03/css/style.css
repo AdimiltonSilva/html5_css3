@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: rgb(240, 151, 151);
+    background-image: url('../img/pattern001.png');
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    /* 
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; 
+    */
+}
+
