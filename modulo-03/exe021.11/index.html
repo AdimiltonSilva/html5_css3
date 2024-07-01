@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Curso em vídeo - HTML5 e CSS3 - Módulo 3 - #21.11 - Escopos de Grupo</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        table {width: 600px; border-collapse: collapse; position: relative;}
+        td, th {border: 1px solid black; padding: 8px; text-align: center;}
+        th {
+            font-weight: bold;
+        }
+        thead {background-color: #383838; color: white;}
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgb(244, 248, 217);
+        }
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: rgb(250, 249, 159);
+        }
+        tfoot > tr {text-align: right;}
+    </style>
+</head>
+<body>
+    <h1>#21.11 - Escopos de Grupo</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">Mesclagem de celulas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="col">Grupo</td>
+                <th scope="col">Nomes</td>
+                <th scope="colgroup" colspan="3">Filmes</td>
+                <!-- <td>4</td>
+                <td>5</td> -->
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</td>
+                <td>Ana maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <!-- <td>11</td> -->
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <!-- <td>16</td> -->
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <!-- <td>Homens</td> -->
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <!-- <td>Homens</td> -->
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="4">Total</th>
+            <td>1.000</td>
+        </tfoot>
+</body>
+</html>
