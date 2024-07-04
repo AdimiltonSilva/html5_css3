@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Curso em vídeo - HTML5 e CSS3 - Módulo 4 – #22.07 – Tornando iframes mais seguros</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif; text-align: justify; padding: 0 25px 10px 20px;}
+        iframe {width: 90vw; height: 150px; border: 2px solid black;}
+    </style>
+</head>
+<body>
+    <h1>#22.07 – Tornando iframes mais seguros</h1>
+
+    <p>Bloqueando scripts do Form</p>
+    <iframe src="extra/pagina01.html" sandbox="sandbox" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Scripts desta página liberados.</p>
+    <iframe src="extra/pagina01.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Scripts liberados.</p>
+    <iframe src="extra/pagina02.html">
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Bloqueando scripts</p>
+    <iframe src="extra/pagina02.html" referrerpolicy="no-referrer" sandbox="sandbox">
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Scripts liberados e bloquear todo o resto.</p>
+    <iframe src="extra/pagina02.html" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+</body>
+</html>
